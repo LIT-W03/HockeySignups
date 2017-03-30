@@ -136,7 +136,7 @@ namespace HockeySignups.Data
 
             InitiateDbAction(cmd =>
             {
-                cmd.CommandText = "SELECT * FORM NotificationSignups";
+                cmd.CommandText = "SELECT * FROM NotificationSignups";
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
